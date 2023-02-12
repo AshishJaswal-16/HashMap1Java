@@ -1,0 +1,295 @@
+import java.util.*;
+
+public class FirstClass{                //HashMap
+    public static void main(String[] args){
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("India", 120);
+        map.put("China", 130);
+        map.put("Malaysia", 140);
+        map.put("Africa", 150);
+        map.put("Antartica", 160);
+
+        System.out.println(map);
+    }
+}
+
+
+
+
+
+
+public class FirstClass{                    //Duplicacy HashMap
+    public static void main(String[] args){
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("India", 120);
+        map.put("China", 130);
+        map.put("Malaysia", 140);
+        map.put("Africa", 150);
+        map.put("Antartica", 160);
+
+        System.out.println(map);
+        map.put("India", 180);
+        System.out.println(map);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+public class FirstClass{            //Sercahing HashMap
+    public static void main(String[] args){
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("India", 120);
+        map.put("China", 130);
+        map.put("Malaysia", 140);
+        map.put("Africa", 150);
+        map.put("Antartica", 160);
+
+        System.out.println(map);
+        map.put("India", 180);
+        System.out.println(map);
+
+        if(map.containsKey("China")){
+            System.out.println("Key is present");
+        }
+        else{
+            System.out.println("Key is not present");
+        }
+
+        System.out.println(map.get("China"));
+        System.out.println(map.get("Kerela"));
+    }
+
+
+
+
+
+
+
+
+
+public class FirstClass{                //Get in HashMap
+    public static void main(String[] args){
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("India", 120);
+        map.put("China", 130);
+        map.put("Malaysia", 140);
+        map.put("Africa", 150);
+        map.put("Antartica", 160);
+
+        System.out.println(map);
+        map.put("India", 180);
+        System.out.println(map);
+
+        if(map.containsKey("China")){
+            System.out.println("Key is present");
+        }
+        else{
+            System.out.println("Key is not present");
+        }
+
+        System.out.println(map.get("China"));
+        System.out.println(map.get("Kerela"));
+    }
+
+
+
+
+
+
+
+
+
+public class FirstClass{                //ObjectCalling HashMap
+    public static void main(String[] args){
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("India", 120);
+        map.put("China", 130);
+        map.put("Malaysia", 140);
+        map.put("Africa", 150);
+        map.put("Antartica", 160);
+
+        System.out.println(map);
+        map.put("India", 180);
+        System.out.println(map);
+
+        if(map.containsKey("China")){
+            System.out.println("Key is present");
+        }
+        else{
+            System.out.println("Key is not present");
+        }
+
+        System.out.println(map.get("China"));
+        System.out.println(map.get("Kerela"));
+
+        HashMap<Integer,String> map2 = new HashMap<>();
+        map2.put(1, "Ashish");
+        System.out.println(map2);
+
+        if(map2.containsKey(1)){
+            System.out.println("Key is present");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class FirstClass{                //Iteration HashMap
+    public static void main(String[] args){
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("India", 120);
+        map.put("China", 130);
+        map.put("Malaysia", 140);
+        map.put("Africa", 150);
+        map.put("Antartica", 160);
+
+        System.out.println(map);
+        map.put("India", 180);
+        System.out.println(map);
+
+        if(map.containsKey("China")){
+            System.out.println("Key is present");
+        }
+        else{
+            System.out.println("Key is not present");
+        }
+
+        System.out.println(map.get("China"));
+        System.out.println(map.get("Kerela"));
+
+        HashMap<Integer,String> map2 = new HashMap<>();
+        map2.put(1, "Ashish");
+        System.out.println(map2);
+
+        if(map2.containsKey(1)){
+            System.out.println("Key is present");
+        }
+
+        //for(int var:arr)
+        for(Map.Entry<String, Integer> e: map.entrySet()){
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+public class FirstClass{                //Iteration of Keys 
+    public static void main(String[] args){
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("India", 120);
+        map.put("China", 130);
+        map.put("Malaysia", 140);
+        map.put("Africa", 150);
+        map.put("Antartica", 160);
+
+        System.out.println(map);
+        map.put("India", 180);
+        System.out.println(map);
+
+        if(map.containsKey("China")){
+            System.out.println("Key is present");
+        }
+        else{
+            System.out.println("Key is not present");
+        }
+
+        System.out.println(map.get("China"));
+        System.out.println(map.get("Kerela"));
+
+        HashMap<Integer,String> map2 = new HashMap<>();
+        map2.put(1, "Ashish");
+        System.out.println(map2);
+
+        if(map2.containsKey(1)){
+            System.out.println("Key is present");
+        }
+
+        //for(int var:arr)
+        for(Map.Entry<String, Integer> e: map.entrySet()){
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());
+        }
+
+        Set<String> keys = map.keySet();
+        for(String key : keys){
+            System.out.println(key+" "+ map.get(key));
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+public class FirstClass{                //Remove in HashMap
+    public static void main(String[] args){
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("India", 120);
+        map.put("China", 130);
+        map.put("Malaysia", 140);
+        map.put("Africa", 150);
+        map.put("Antartica", 160);
+
+        System.out.println(map);
+        map.put("India", 180);
+        System.out.println(map);
+
+        if(map.containsKey("China")){
+            System.out.println("Key is present");
+        }
+        else{
+            System.out.println("Key is not present");
+        }
+
+        System.out.println(map.get("China"));
+        System.out.println(map.get("Kerela"));
+
+        HashMap<Integer,String> map2 = new HashMap<>();
+        map2.put(1, "Ashish");
+        System.out.println(map2);
+
+        if(map2.containsKey(1)){
+            System.out.println("Key is present");
+        }
+
+        //for(int var:arr)
+        for(Map.Entry<String, Integer> e: map.entrySet()){
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());
+        }
+
+        Set<String> keys = map.keySet();
+        for(String key : keys){
+            System.out.println(key+" "+ map.get(key));
+        }
+
+        map.remove("China");
+        System.out.println(map);
+    }
